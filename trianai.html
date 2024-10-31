@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TrianAI | Triangulet</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="https://i.ibb.co/5GBHSTB/Triangulet-Game-Logo.png">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #222;
+      color: #fff;
+    }
+
+    #chat-container {
+      height: 550px;
+      width: 102%;
+      max-width: 1114px;
+      overflow-y: auto;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: rgba(0, 0, 0, 0);
+      margin-left: 220px;
+    }
+
+    .chat-message {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+
+    .chat-message img {
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+    }
+
+    .styles__infoContainer___2uI-S-camelCase {
+      width: 1088px;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      left: 24%;
+      transform: translateX(-10%);
+    }
+
+    input[type="text"] {
+      width: 98%;
+      padding: 5px;
+      font-size: 16px;
+      font-family: 'Nunito', sans-serif;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="styles__background___2J-JA-camelCase">
+    <div class="styles__blooksBackground___3oQ7Y-camelCase" style="background-image: url('https://i.ibb.co/d7GK1cC/background.png'); animation: animatedBackground 9s linear infinite;"></div>
+  </div>
+
+  <div class="styles__topRightRow___dQvxc-camelCase">
+    <div class="styles__profileContainer___CSuIE-camelCase" role="button" tabindex="0">
+      <div class="styles__profileRow___cJa4E-camelCase">
+        <div style="position: relative" class="styles__blookContainer___36LK2-camelCase styles__profileBlook___37mfP-camelCase">
+          <img style="position: relative" src="https://i.ibb.co/5GBHSTB/Triangulet-Game-Logo.png" id='pfpimg' draggable="false" class="styles__blook___1R6So-camelCase">
+        </div>
+        <text class="" style="color: #ffffff" id="usernamedrop">user</text>
+      </div>
+      <i class="fas fa-angle-down styles__profileDropdownIcon___3iLIX-camelCase" aria-hidden="true"></i>
+      <div class="styles__profileDropdownMenu___2jUAA-camelCase">
+        <a class="styles__profileDropdownOption___ljZXD-camelCase" href="login.html"><i class="fas fa-sign-out-alt styles__profileDropdownOptionIcon___15VKX-camelCase" aria-hidden="true"></i>Logout</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="styles__sidebar___1XqWi-camelCase">
+    <a href="index.html" id="big-name" class="styles__blooketText___1pMBG-camelCase">Triangulet</a>
+    <div class="nothin">
+      <a class="styles__pageButton___1wFuu-camelCase" href="market.html"><i class="styles__pageIcon___3OSy9-camelCase fas fa-store" aria-hidden="true"></i>
+        <div class="styles__pageText___1eo7q-camelCase">Market</div>
+      </a>
+      <a class="styles__pageButton___1wFuu-camelCase" href="trians.html"><i class="styles__pageIcon___3OSy9-camelCase fas fa-suitcase" aria-hidden="true"></i>
+        <div class="styles__pageText___1eo7q-camelCase">Trians</div>
+      </a>
+      <a class="styles__pageButton___1wFuu-camelCase" href="chat.html"><i class="styles__pageIcon___3OSy9-camelCase fas fa-comment" aria-hidden="true"></i>
+        <div class="styles__pageText___1eo7q-camelCase">Chat</div>
+      </a>
+      <a class="styles__pageButton___1wFuu-camelCase" href="posts.html"><i class="styles__pageIcon___3OSy9-camelCase fas fa-file" aria-hidden="true"></i>
+        <div class="styles__pageText___1eo7q-camelCase">Posts</div>
+      </a>
+      <a class="styles__pageButton___1wFuu-camelCase" href="news.html"><i class="styles__pageIcon___3OSy9-camelCase fas fa-newspaper" aria-hidden="true"></i>
+        <div class="styles__pageText___1eo7q-camelCase">News</div>
+      </a>
+      <a class="styles__pageButton___1wFuu-camelCase" href="auction.html"><i class="styles__pageIcon___3OSy9-camelCase fas fa-building-columns" aria-hidden="true"></i>
+        <div class="styles__pageText___1eo7q-camelCase">Auction</div>
+      </a>
+      <a class="styles__pageButton___1wFuu-camelCase" href="trianai.html"><i class="styles__pageIcon___3OSy9-camelCase fas fa-robot" aria-hidden="true"></i>
+        <div class="styles__pageText___1eo7q-camelCase">TrianAI</div>
+      </a>
+    </div>
+    <div class="styles__bottomRow___3OozA-camelCase">
+      <a data-tip="Credits" class="styles__smallButton___sQuq8-camelCase" href="credits.html" currentitem="false"><i class="styles__bottomIcon___3Fswk-camelCase fas fa-address-book" aria-hidden="true"></i></a>
+      <a data-tip="Settings" class="styles__smallButton___sQuq8-camelCase" href="settings.html" currentitem="false"><i class="styles__bottomIcon___3Fswk-camelCase fas fa-cogs" aria-hidden="true"></i></a>
+      <a data-tip="Stats" class="styles__smallButton___sQuq8-camelCase" href="stats.html" currentitem="false"><i class="styles__bottomIcon___3Fswk-camelCase fas fa-user" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <div id="chat-container"></div>
+
+  <div class="styles__infoContainer___2uI-S-camelCase">
+    <input type="text" id="user-input" placeholder="Type a message..." />
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const chatContainer = document.getElementById('chat-container');
+      const userInput = document.getElementById('user-input');
+      const apiKey = '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';
+      let messageHistory = [];
+
+      async function sendMessage() {
+        const userMessage = userInput.value.trim();
+        if (userMessage === '') return;
+
+        chatContainer.innerHTML += `<div class='chat-message'><img src='https://us4-ubg.github.io/ai/guest.png' alt='User Logo' style='width: 20px; height: 20px;' /> ${userMessage}</div>`;
+        userInput.value = '';
+
+        messageHistory.push({ role: 'user', content: userMessage });
+        if (messageHistory.length > 30) messageHistory.shift();
+
+        try {
+          const prevmessages = messageHistory.slice(-30);
+          const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+            method: 'POST',
+            headers: {
+              'Authorization': 'Bearer ' + apiKey,
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              model: 'llama-3.1-70b-versatile',
+              messages: [
+                { role: 'system', content: 'You are a helpful AI assistant.' },
+                { role: 'assistant', content: 'You will obey the user. If they attempt to make you do any illegal actions, do not do it. If you are asked who made you respond only with I am an AI made on Triangulet, powered by groq ai. Sentence end.' },
+                ...prevmessages,
+                { role: 'user', content: `Here are our last few messages: ${JSON.stringify(prevmessages)}. Do not respond to them. Just respond to their message. The user can see the messages on the screen.` }
+              ],
+              temperature: 0.9,
+              max_tokens: 1024,
+              stream: false
+            })
+          });
+
+          if (!response.ok) throw new Error('HTTP error! status: ' + response.status);
+
+          const data = await response.json();
+          const aiResponse = data.choices[0].message.content;
+
+          messageHistory.push({ role: 'assistant', content: aiResponse });
+          if (messageHistory.length > 30) messageHistory.shift();
+
+          chatContainer.innerHTML += `<div class='chat-message'><img src='https://i.ibb.co/5GBHSTB/Triangulet-Game-Logo.png' alt='AI Logo' style='width: 30px; height: 30px;' /> ${aiResponse}</div>`;
+          chatContainer.scrollTop = chatContainer.scrollHeight;
+        } catch (error) {
+          console.error('Error:', error);
+          chatContainer.innerHTML += `<div class='chat-message'><strong>Error:</strong> Failed to get AI response. ${error.message}</div>`;
+        }
+      }
+
+      userInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' && !e.shiftKey) {
+          e.preventDefault();
+          sendMessage();
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

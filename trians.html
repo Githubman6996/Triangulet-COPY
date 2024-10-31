@@ -1,94 +1,252 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js
-    " type="text/javascript"></script>
-      <script src="/js/all.js"></script>
-      <script src="/js/themes.js"></script>
-    <script defer src="/js/trians.js"></script>
-    <link rel="stylesheet" href="/fontawesome6.3.0.css" crossorigin="anonymous">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-    <link rel="stylesheet" href="/main.css">
-    <title>Trians | name</title>
-    <link rel="shortcut icon" href="/media/misc/favicon.png">
-</head>
+    <link rel="stylesheet" href="style.css">
+    <title>Trians | Triangulet</title>
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/5GBHSTB/Triangulet-Game-Logo.png">
+    <style>
+      .image-container {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: flex-start; 
+        margin-top: 10px; 
+        overflow-x: auto; 
+        white-space: nowrap; 
+        padding: 10px 0; 
+      }
 
-<body>
+      .image-container img {
+        width: 50px; 
+        margin: 5px; 
+        height: auto; 
+      }
+
+      .section {
+        margin-top: 20px; 
+        color: white;
+      }
+
+      .section h1 {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+
+      .section hr {
+        width: 100%;
+        border-top: 2px solid white;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
     <div class="styles__background___2J-JA-camelCase">
-        <div class="styles__blooksBackground___3oQ7Y-camelCase" style="background-image: url(&quot;/media/misc/background.png&quot;);  animation: animatedBackground 9s linear infinite;
-    -moz-animation: animatedBackground 9s linear infinite;
-    -webkit-animation: animatedBackground 9s linear infinite;
-    -ms-animation: animatedBackground 9s linear infinite;
-    -o-animation: animatedBackground 9s linear infinite;"></div>
+      <div class="styles__blooksBackground___3oQ7Y-camelCase" style="background-image: url(&quot;https://i.ibb.co/d7GK1cC/background.png&quot;); animation: animatedBackground 9s linear infinite;"></div>
     </div>
-    <div class="styles__topRightRow___dQvxc-camelCase">
-        <div class="styles__profileContainer___CSuIE-camelCase" role="button" tabindex="0"><div class="styles__profileRow___cJa4E-camelCase"><div style="position: relative" class="styles__blookContainer___36LK2-camelCase styles__profileBlook___37mfP-camelCase">
-            <img src="" id='pfpimg'draggable="false" class="styles__blook___1R6So-camelCase">
-        </div><text class="" style="color: #ffffff" id="usernamedrop">user</text>
-    </div><i class="fas fa-angle-down styles__profileDropdownIcon___3iLIX-camelCase" aria-hidden="true"></i>
-    <div class="styles__profileDropdownMenu___2jUAA-camelCase">
-        <a class="styles__profileDropdownOption___ljZXD-camelCase" href="/logout"><i class="fas fa-sign-out-alt styles__profileDropdownOptionIcon___15VKX-camelCase" aria-hidden="true"></i>Logout</a></div>
-        </div></div>
-    <div class="styles__sidebar___1XqWi-camelCase">
-        <a href="/" class="styles__blooketText___1pMBG-camelCase">name</a>
-        <div class="nothin"><a class="styles__pageButton___1wFuu-camelCase" href="/market"><i
-                    class="styles__pageIcon___3OSy9-camelCase fas fa-store" aria-hidden="true"></i>
-                <div class="styles__pageText___1eo7q-camelCase">Market</div>
-            </a><a class="styles__pageButton___1wFuu-camelCase" href="/trians"><i
-                    class="styles__pageIcon___3OSy9-camelCase fas fa-suitcase" aria-hidden="true"></i>
-                <div class="styles__pageText___1eo7q-camelCase">Trians</div>
-            </a><a class="styles__pageButton___1wFuu-camelCase" href="/posts"><i
-                    class="styles__pageIcon___3OSy9-camelCase fas fa-file" aria-hidden="true"></i>
-                <div class="styles__pageText___1eo7q-camelCase">Posts</div>
-            </a><a class="styles__pageButton___1wFuu-camelCase" ><i
-                    class="styles__pageIcon___3OSy9-camelCase fas fa-newspaper" aria-hidden="true"></i>
-                <div class="styles__pageText___1eo7q-camelCase">News</div>
-            </a><a class="styles__pageButton___1wFuu-camelCase" href="/auction"><i class="styles__pageIcon___3OSy9-camelCase fas fa-building-columns" aria-hidden="true"></i>
-                <div class="styles__pageText___1eo7q-camelCase">Auction</div>
-            </a></div>
-        <div class="styles__bottomRow___3OozA-camelCase">
-            <a data-tip="Credits" class="styles__smallButton___sQuq8-camelCase" href="/credits" currentitem="false"><i class="styles__bottomIcon___3Fswk-camelCase fas fa-address-book" aria-hidden="true"></i></a>
-            <a data-tip="Settings" class="styles__smallButton___sQuq8-camelCase" href="/settings" currentitem="false"><i class="styles__bottomIcon___3Fswk-camelCase fas fa-cogs" aria-hidden="true"></i></a>
-            <a data-tip="Stats" class="styles__smallButton___sQuq8-camelCase" href="/stats" currentitem="false"><i class="styles__bottomIcon___3Fswk-camelCase fas fa-user" aria-hidden="true"></i></a>
-        </div>
-    </div>
-    <div class="arts__profileBody___eNPbH-camelCase">
-        <div class="styles__left___9beun-camelCase triansthing">
-            <div class="styles__blooksHolder___3qZR1-camelCase" id="trianscontainer">
 
-            </div>
+    <div class="styles__topRightRow___dQvxc-camelCase">
+      <div class="styles__profileContainer___CSuIE-camelCase" role="button" tabindex="0">
+        <div class="styles__profileRow___cJa4E-camelCase">
+          <div style="position: relative" class="styles__blookContainer___36LK2-camelCase styles__profileBlook___37mfP-camelCase">
+            <img src="https://i.ibb.co/5GBHSTB/Triangulet-Game-Logo.png" id='pfpimg' draggable="false" class="styles__blook___1R6So-camelCase">
+          </div>
+          <text class="" style="color: #ffffff" id="usernamedrop">user</text>
         </div>
-        <div class="styles__right___385mx-camelCase">
-            <img id="trianbackground" alt="trianbackground" class="trianBackGround" src="/media/misc/trianbackground.png">
-            <div class="styles__rightTopText___2VrKK-camelCase">
-                    <div class="styles__highlightedName___2wOtf-camelCase" style="font-size: 40px;">
-                <div id="trianname" style="display: block; white-space: nowrap;font-family: Titan One,sans-serif;color:#fff">Triangulet</div>
-                    </div>
-            <div id="trianrarity" class="styles__highlightedRarity___1EXx_-camelCase" style="color: rgb(255, 255, 255);font-family: Titan One,sans-serif;">Common</div>
+        <i class="fas fa-angle-down styles__profileDropdownIcon___3iLIX-camelCase" aria-hidden="true"></i>
+        <div class="styles__profileDropdownMenu___2jUAA-camelCase">
+          <a class="styles__profileDropdownOption___ljZXD-camelCase" href="login.html"><i class="fas fa-sign-out-alt styles__profileDropdownOptionIcon___15VKX-camelCase" aria-hidden="true"></i>Logout</a>
         </div>
-            <div class="styles__trianContainer___36LK2-camelCase styles__rightTrian___1JkY7-camelCase">
-                <img id="trianimg"src="/media/misc/favicon.png" alt="Default" draggable="false" class="styles__trian___1R6So-camelCase">
-            </div>
-            <div id="trianquantity" class="styles__highlightedBottom___QmY2Y-camelCase">Default</div>
-            <div class="styles__rightBottom___F7qsO-camelCase"></div>
-        </div>
-        <div class="styles__rightButtonRow___3a0GF-camelCase">
-            <div id="selltrian" class="styles__button___1_E-G-camelCase styles__rightButton___2_ZIX-camelCase" role="button" tabindex="0">
-                <div class="styles__shadow___3GMdH-camelCase"></div>
-                <div class="styles__edge___3eWfq-camelCase" id="edge1" style="background-color: #0c8015;"></div>
-                <div class="styles__front___vcvuy-camelCase" id="front1" style="background-color: #0c8015;">
-                    <div class="styles__rightButtonInside___14imT-camelCase"><img src="/media/misc/token.png" alt="Token" class="styles__rightButtonImg___1WJdo-camelCase" draggable="false">Sell</div>
-                </div>
-            </div>
-   <!--         <div id="auctiontrian" class="styles__button___1_E-G-camelCase styles__rightButton___2_ZIX-camelCase" role="button" tabindex="0">
-                <div class="styles__shadow___3GMdH-camelCase"></div>
-                <div class="styles__edge___3eWfq-camelCase" id="edge2" style="background-color: #0c8015;"></div>
-                <div class="styles__front___vcvuy-camelCase" id="front2" style="background-color: #0c8015;">
-                    <div class="styles__rightButtonInside___14imT-camelCase"><i style="margin-right:7px" class="fas fa-building-columns"></i>Auction</div>
-                </div> -->
-            </div>
-            
+      </div>
     </div>
+
+    <div class="styles__sidebar___1XqWi-camelCase">
+      <a href="index.html" class="styles__blooketText___1pMBG-camelCase">Triangulet</a>
+      <div class="nothin">
+        <a class="styles__pageButton___1wFuu-camelCase" href="market.html"><i class="styles__pageIcon___3OSy9-camelCase fas fa-store" aria-hidden="true"></i>
+          <div class="styles__pageText___1eo7q-camelCase">Market</div>
+        </a>
+        <a class="styles__pageButton___1wFuu-camelCase" href="trians.html"><i class="styles__pageIcon___3OSy9-camelCase fas fa-suitcase" aria-hidden="true"></i>
+          <div class="styles__pageText___1eo7q-camelCase">Trians</div>
+        </a>
+        <a class="styles__pageButton___1wFuu-camelCase" href="chat.html"><i class="styles__pageIcon___3OSy9-camelCase fas fa-comment" aria-hidden="true"></i>
+          <div class="styles__pageText___1eo7q-camelCase">Chat</div>
+        </a>
+        <a class="styles__pageButton___1wFuu-camelCase" href="posts.html"><i class="styles__pageIcon___3OSy9-camelCase fas fa-file" aria-hidden="true"></i>
+          <div class="styles__pageText___1eo7q-camelCase">Posts</div>
+        </a>
+        <a class="styles__pageButton___1wFuu-camelCase" href="news.html"><i class="styles__pageIcon___3OSy9-camelCase fas fa-newspaper" aria-hidden="true"></i>
+          <div class="styles__pageText___1eo7q-camelCase">News</div>
+        </a>
+        <a class="styles__pageButton___1wFuu-camelCase" href="auction.html"><i class="styles__pageIcon___3OSy9-camelCase fas fa-building-columns" aria-hidden="true"></i>
+          <div class="styles__pageText___1eo7q-camelCase">Auction</div>
+        </a>
+        <a class="styles__pageButton___1wFuu-camelCase" href="trianai.html"><i class="styles__pageIcon___3OSy9-camelCase fas fa-robot" aria-hidden="true"></i>
+          <div class="styles__pageText___1eo7q-camelCase">TrianAI</div>
+        </a>
+      </div>
+
+      <div class="styles__bottomRow___3OozA-camelCase">
+        <a data-tip="Credits" class="styles__smallButton___sQuq8-camelCase" href="credits.html" currentitem="false"><i class="styles__bottomIcon___3Fswk-camelCase fas fa-address-book" aria-hidden="true"></i></a>
+        <a data-tip="Settings" class="styles__smallButton___sQuq8-camelCase" href="settings.html" currentitem="false"><i class="styles__bottomIcon___3Fswk-camelCase fas fa-cogs" aria-hidden="true"></i></a>
+        <a data-tip="Stats" class="styles__smallButton___sQuq8-camelCase" href="stats.html" currentitem="false"><i class="styles__bottomIcon___3Fswk-camelCase fas fa-user" aria-hidden="true"></i></a>
+      </div>
     </div>
-</body>
+
+    <div class="arts__profileBody___eNPbH-camelCase">
+      <div class="styles__left___9beun-camelCase triansthing">
+        <div class="section">
+          <div class="styles__setText___1PQLQ-camelCase">Color</div>
+          <hr>
+          <div class="image-container">
+            <img src="https://i.ibb.co/c30ZrtN/105f00d0-23c6-497e-badd-3a501e8287e5.png" alt="Red">
+            <img src="https://i.ibb.co/VL8JjKH/f2fc88f0-94cc-450b-abdf-80c5f8c5376c.png" alt="Blue">
+            <img src="https://i.ibb.co/3s15m5b/c92eea76-f8a1-4b41-b545-9bc5e75091ae.png" alt="Yellow">
+            <img src="https://i.ibb.co/DYmSLKQ/e6eea3a1-acd8-4b8f-b89d-0b8fcf34df21.png" alt="Orange">
+            <img src="https://i.ibb.co/Sx1jw3s/980dd3d9-6933-48b8-b5f2-3b6d62b0d26a.png" alt="Purple">
+            <img src="https://i.ibb.co/rtF5y4J/2212c8ff-445d-44f2-822b-6407e99b30f2.png" alt="Green">
+            <img src="https://i.ibb.co/Bqv5J6g/bae0628d-b7a2-482d-b927-d1016b08e5e7.png" alt="Black">
+            <img src="https://i.ibb.co/S3Y4Sc6/259feca5-74e0-456c-8870-5f98eff342bd.png" alt="Brown">
+            <img src="https://i.ibb.co/w6R8nPm/d8ff9c70-280f-4667-a2f4-f9bed5d5127e.png" alt="Pink">
+            <img src="https://i.ibb.co/1qM9mpQ/340245a2-a990-44bf-8150-cc85893d798f.png" alt="White">
+            <img src="https://i.ibb.co/9phkzjS/253a6fcd-62a3-403d-84db-b542db248be7.png" alt="Silver">
+            <img src="https://i.ibb.co/m9jP8s4/71d649c0-9824-420a-a4ed-106518cfb3da.png" alt="Gold">
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="styles__setText___1PQLQ-camelCase">Food</div>
+          <hr>
+          <div class="image-container">
+            <img src="https://i.ibb.co/MMRDbVY/fb7df4ac-a418-4880-ae93-fc19888d48233.png" alt="Watermelon">
+            <img src="https://i.ibb.co/HxcWJ5j/6dd40e16-98a4-49a4-8102-a61c11ce5a82.png" alt="Carrot">
+            <img src="https://i.ibb.co/ccp36nw/417912a9-9b9d-4fa9-8d3d-ab8b37012e33.png" alt="Pizza">
+            <img src="https://i.ibb.co/ZNqDV0J/zzzzz-168531548390766ecd-036e-47ec-a2c7-c71cb85aa5ec.png" alt="Cookie">
+            <img src="https://i.ibb.co/wwXF4zx/6f060f5b-4e9e-4aba-bb6b-11de48ee7da4.png" alt="Strawberry">
+            <img src="https://i.ibb.co/X4qfyXZ/zzzzz-168531548357bc45b6-b520-412d-949a-9a14cc43bba1.png" alt="Pop Tart">
+            <img src="https://i.ibb.co/TvdcpPk/ec58525c-2136-46f4-ac50-d714290f489b.png" alt="Popsicle">
+            <img src="https://i.ibb.co/7ynx7Q8/zzzzz-1685315483d257426d-b651-42e2-bdc9-d64df7c73692.png" alt="Cake">
+            <img src="https://i.ibb.co/3713BL4/b48e6916-e33b-4eb1-ba62-c94a48e79b8b.png" alt="Strawberry Pie">
+            <img src="https://i.ibb.co/Mk3Bw4n/ba949b88-3f2c-4e02-b693-9580091cb9a7.png" alt="Waffle">
+            <img src="https://i.ibb.co/M5T3FK1/de64142d-654c-438d-97ca-7225dc458d37.png" alt="Candy Corn">
+            <img src="https://i.ibb.co/9WtJpct/a8b90846-282b-4255-aee0-c2279697be3f.png" alt="Chocolate Cake">
+            <img src="https://i.ibb.co/yPKYjdD/effbe814-e63e-4110-9d77-6be284dc1e43.png" alt="Sandwich">
+            <img src="https://i.ibb.co/LCwhpK8/a1feb5e4-d04d-43df-b413-566cc30ee967.png" alt="Vanilla Cake">
+            <img src="https://i.ibb.co/XzBsdPy/zzzzz-1685315483cc80e0a9-b435-4b07-aaca-8d1cd993131a.png" alt="Chocolate">
+            <img src="https://i.ibb.co/xzdYf6D/136e1626-9c72-4812-ae84-971e5ed7d319.png" alt="Golden Carrot">
+            <img src="https://i.ibb.co/fqYyDBS/c9ff799a-778e-4db0-89f1-ca13ecd6f486.png" alt="Hersheys">
+          </div>
+        </div>
+        <div class="section">
+          <div class="styles__setText___1PQLQ-camelCase">Sports</div>
+          <hr>
+          <div class="image-container">
+            <img src="https://i.ibb.co/kxrDp64/zzzzz-1681588515e7a478ec-9816-4619-ac3d-61c4b0c1fbe9.png" alt="Soccer Ball">
+            <img src="https://i.ibb.co/G5Vt2Wj/f5e0f535-25c6-4f4b-8760-ed351781aba9.png" alt="Football">
+            <img src="https://i.ibb.co/LN4hFhP/f2d7ba1c-2711-4673-aeb3-32d5bc4bd7aa.png" alt="Basketball">
+            <img src="https://i.ibb.co/BLD1WzW/343b6195-6c45-4e62-bc93-88a19ad3755f.png" alt="Baseball">
+            <img src="https://i.ibb.co/3WS22s2/1a989113-f440-4d1c-9d67-c065a951fce4.png" alt="Boomerang">
+            <img src="https://i.ibb.co/P477LSR/54876be8-45cf-44cb-abc8-6c88dd56385f.png" alt="Volleyball">
+            <img src="https://i.ibb.co/fS7FH0V/c222333f-290f-4524-a091-8ceefd8b6aca.png" alt="Tennis Ball">
+            <img src="https://i.ibb.co/7kXcjb4/e6dd49fa-18f0-41f0-9fad-f04ec3ff30ea.png" alt="Pool Rack">
+            <img src="https://i.ibb.co/gdqhNPK/fef859e9-3ab9-430d-b8c1-1c2fee2e272c.png" alt="Bowling Ball">
+            <img src="https://i.ibb.co/2MmdRQm/37edd216-76d7-4a2e-8109-6a484a7df696.png" alt="Birdie">
+            <img src="https://i.ibb.co/Wyn30jm/3e897615-145c-474b-be06-347b2494281b.png" alt="Beach Ball">
+            <img src="https://i.ibb.co/nnB0cKQ/zzzzz-16853153783e39ff05-8089-4e73-ad2b-6b69deb618a4.png" alt="Golden Bowling Ball">
+          </div>
+        </div>
+        <div class="section">
+          <div class="styles__setText___1PQLQ-camelCase">OG</div>
+          <hr>
+          <div class="image-container">
+            <img src="https://i.ibb.co/ctWMmmd/zzzzz-1685315616af038d27-9b70-4be9-875f-fb1e0ea1e4ce.png" alt="Trixter">
+            <img src="https://i.ibb.co/QQgH8Kk/zzzzz-1685315616cfa467e2-2127-44d3-a1cf-f7535fc22df9.png" alt="BRP">
+            <img src="https://i.ibb.co/hKGW9b9/zzzzz-168531561778b5df81-18bb-4fa3-9e7a-db9c163d1c8e.png" alt="Xotic">
+            <img src="https://i.ibb.co/GTDcSws/ezgif-7-7909649d71.gif" alt="Xotic Gif">
+            <img src="https://i.ibb.co/r00xvZ8/zzzzz-1685315616069658ea-9ebe-46fd-8a74-7ec8b35618cc.png" alt="LukeDuke">
+            <img src="https://i.ibb.co/JkL0X8D/zzzzz-1685315616254e6610-9638-4113-b76c-5de827d4203f.png" alt="Hans Island">
+            <img src="https://i.ibb.co/3v4LtfN/zzzzz-1685315617ecd2d929-c5cb-440b-8110-40f1da74dc35.png" alt="EvDogg09">
+            <img src="https://i.ibb.co/1nrMF5P/zzzzz-168531561708f5883e-68a8-45ff-9beb-808f757da29a.png" alt="ColControl">
+            <img src="https://i.ibb.co/t2y3ykn/zzzzz-16853156179d0884fe-592c-43c7-aa3b-c28d31a6c5f4.png" alt="Bringles">
+            <img src="https://i.ibb.co/87qVjh0/monkey.gif" alt="Monkey">
+            <img src="https://i.ibb.co/mHYcxkP/zzzzz-168531561739b07666-017c-41be-b625-3d95b3ac665c.png" alt="peguinpowers">
+          </div>
+        </div>
+        <div class="section">
+          <div class="styles__setText___1PQLQ-camelCase">Hacker</div>
+          <hr>
+          <div class="image-container">
+            <img src="https://i.ibb.co/SdFVFyV/zzzzz-16853156160d1f93fe-6f12-46f2-80d3-87dc3b0c899b.png" alt="Hacker">
+            <img src="https://i.ibb.co/MCCvj8B/zzzzz-1685315616c265f705-f632-4cab-8a78-76be7b6459c3.png" alt="Hacker">
+            <img src="https://i.ibb.co/qY7Rtt7/zzzzz-1685315616de62876c-034b-49fd-a7e5-375804f4e718.png" alt="Virus">
+            <img src="https://i.ibb.co/GT0fQrL/zzzzz-1685315616d0ec718f-398d-4b96-a10e-e99cf93cafc2.png" alt="Banned">
+            <img src="https://i.ibb.co/gT3SBdB/zzzzz-16853156161c33bd06-6cba-4cbc-af93-ffb3ecc93a6f.png" alt="Hacker Bot">
+            <img src="https://i.ibb.co/WfGgQ2Z/zzzzz-168531561629511fcd-e72f-4b5e-bd6c-b5974cbb2f5d.png" alt="Hacker Code">
+            <img src="https://i.ibb.co/WGn4Zb8/zzzzz-16853156165cfadafc-9753-4737-b43e-74f5d1a76d00.png" alt="Glitch">
+            <img src="https://i.ibb.co/c3WXB2V/zzzzz-1685315616c86f7b7d-78db-4c01-9d26-913be37d02a0.png" alt="Bomb">
+            <img src="https://i.ibb.co/DQg1rhF/zzzzz-168531561696cfed2c-7341-4b7e-ab61-eeb7ac5c5538.png" alt="Letter">
+            <img src="https://i.ibb.co/fMMJkBr/zzzzz-168531561656ee9be2-26bb-47a8-8b98-c680d5345c43.png" alt="Idiot">
+            <img src="https://i.ibb.co/Y2sGhCQ/zzzzz-16853156169589374c-86c1-4fcb-8abe-b12a444309ce.png" alt="Broken Hacker">
+            <img src="https://i.ibb.co/XzBy5pr/zzzzz-168531561625117675-6b13-44c0-beef-4a80e55abd11.png" alt="ILOVEYOU">
+            <img src="https://i.ibb.co/0qZB6g5/zzzzz-16853156168822eda6-0092-4a72-9834-55aa22f873ff.png" alt="Anonymous">
+          </div>
+        </div>
+        <div class="section">
+          <div class="styles__setText___1PQLQ-camelCase">Chess</div>
+          <hr>
+          <div class="image-container">
+            <img src="https://i.ibb.co/r5bF7qY/zzzzz-1685315615f18b3944-150a-4cb9-a2c4-f7c71e8ac722.png" alt="White Pawn">
+            <img src="https://i.ibb.co/pxmfJzx/zzzzz-1685315615fc1d7bda-f28f-4e92-9357-243b56aabbaa.png" alt="Black Pawn">
+            <img src="https://i.ibb.co/xmj001t/zzzzz-16853156158a4737a7-8c85-4ecc-b9a2-1cb5c8ea22da.png" alt="White Knight">
+            <img src="https://i.ibb.co/Snd8vYZ/zzzzz-16853156154a960bd0-3273-467a-b413-8f7cf705df11.png" alt="Black Knight">
+            <img src="https://i.ibb.co/k8zGc9H/zzzzz-16853156152209bdc0-6222-46cd-9667-3d692a6c4687.png" alt="White Bishop">
+            <img src="https://i.ibb.co/Zz2GTsc/zzzzz-16853156154d5e133d-3740-44d0-9c73-0e8998940fd6.png" alt="Black Bishop">
+            <img src="https://i.ibb.co/7jZp1d6/zzzzz-168531561522ee3622-9584-4e05-bebb-29c083ce077b.png" alt="White Rook">
+            <img src="https://i.ibb.co/275GYjz/zzzzz-16853156160dea6503-cacf-4197-b991-6d5a7a3f6edc.png" alt="Black Rook">
+            <img src="https://i.ibb.co/z5qTn41/zzzzz-168531561635e7a4c1-3d4d-4e3c-b00b-43272c6de818.png" alt="White Queen">
+            <img src="https://i.ibb.co/c68zqKJ/zzzzz-1685315615091610ba-4c71-4314-a928-5bbe6ff50f11.png" alt="Black Queen">
+            <img src="https://i.ibb.co/6YG9sfM/zzzzz-16853156158df1e9c3-23e0-40f8-a14c-faa6feb3f345.png" alt="White King">
+            <img src="https://i.ibb.co/rsDv9kK/zzzzz-168531561639ed6966-d3ee-42c6-a876-baca9d585256.png" alt="Black King">
+            <img src="https://i.ibb.co/Lz0NXcw/zzzzz-168531561662a04e6c-3b96-4314-bf6c-792fbf4c30f4.png" alt="Pink Knight">
+          </div>
+        </div>
+      </div>
+
+      <div class="styles__right___385mx-camelCase">
+        <img id="trianbackground" alt="trianbackground" class="trianBackGround" src="https://i.ibb.co/WGQ66ZL/Imported-piskel.gif">
+        <div class="styles__rightTopText___2VrKK-camelCase">
+          <div class="styles__highlightedName___2wOtf-camelCase" style="font-size: 40px;">
+            <div id="trianname" style="display: block; white-space: nowrap;font-family: Titan One,sans-serif;color:#fff">Triangulet</div>
+          </div>
+          <div id="trianrarity" class="styles__highlightedRarity___1EXx_-camelCase" style="color: rgb(255, 255, 255);font-family: Titan One,sans-serif;">Common</div>
+        </div>
+
+        <div class="styles__trianContainer___36LK2-camelCase styles__rightTrian___1JkY7-camelCase">
+          <img id="trianimg" src="https://i.ibb.co/5GBHSTB/Triangulet-Game-Logo.png" alt="Default" draggable="false" class="styles__trian___1R6So-camelCase">
+        </div>
+        <div id="trianquantity" class="styles__highlightedBottom___QmY2Y-camelCase">Default</div>
+        <div class="styles__rightBottom___F7qsO-camelCase"></div>
+      </div>
+
+      <div class="styles__rightButtonRow___3a0GF-camelCase">
+        <div id="selltrian" class="styles__button___1_E-G-camelCase styles__rightButton___2_ZIX-camelCase" role="button" tabindex="0">
+          <div class="styles__shadow___3GMdH-camelCase"></div>
+          <div class="styles__edge___3eWfq-camelCase" id="edge1" style="background-color: #0c8015;"></div>
+          <div class="styles__front___vcvuy-camelCase" id="front1" style="background-color: #0c8015;">
+            <div class="styles__rightButtonInside___14imT-camelCase"><img src="https://i.ibb.co/ckGKR82/Token.png" alt="Token" class="styles__rightButtonImg___1WJdo-camelCase" draggable="false">Sell</div>
+          </div>
+        </div>
+        <div id="auctiontrian" class="styles__button___1_E-G-camelCase styles__rightButton___2_ZIX-camelCase" role="button" tabindex="0">
+          <div class="styles__shadow___3GMdH-camelCase"></div>
+          <div class="styles__edge___3eWfq-camelCase" id="edge2" style="background-color: #0c8015;"></div>
+          <div class="styles__front___vcvuy-camelCase" id="front2" style="background-color: #0c8015;">
+            <div class="styles__rightButtonInside___14imT-camelCase"><i style="margin-right:7px" class="fas fa-building-columns"></i>Auction</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
